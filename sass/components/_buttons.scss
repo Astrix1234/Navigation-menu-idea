@@ -7,13 +7,13 @@
   scale: 3;
   display: block;
   cursor: pointer;
-  transition: visibility 300ms ease-in-out, scale 300ms ease-in-out;
+  transition: visibility 400ms ease-in-out, scale 400ms ease-in-out;
 }
 .button-clouse {
   @extend .button-open;
   translate: -50% 150%;
 }
-.icon-open-menu {
+.button-open .icon-open-menu {
   fill: rgb(229, 190, 190);
   transition: fill 300ms ease-in-out;
   &:hover,
@@ -21,8 +21,13 @@
     fill: aqua;
   }
 }
-.icon-clouse-menu {
-  @extend .icon-open-menu;
+.button-clouse .icon-clouse-menu {
+  fill: rgb(229, 190, 190);
+  transition: fill 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    fill: aqua;
+  }
 }
 
 .is-hidden {

@@ -7,26 +7,25 @@ li {
   position: absolute;
   left: 50%;
   translate: -50%;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   scale: 0;
   visibility: hidden;
-  &:nth-child(1) {
-    background-color: rgb(0, 229, 255);
-  }
-  &:nth-child(2) {
-    background-color: rgb(0, 251, 255);
-  }
-  &:nth-child(3) {
-    background-color: rgb(0, 255, 221);
-  }
+  transition: background-color 300ms ease-in-out;
 }
 .open-agency {
+  background-color: rgb(0, 229, 255);
   animation: moveElementFirst 2000ms ease-in-out normal both;
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: rgb(123, 233, 245);
+  }
 }
 @keyframes moveElementFirst {
   0% {
@@ -42,33 +41,39 @@ li {
 
   40% {
     scale: 1;
-    translate: -50% 90%;
+    translate: -50% 80%;
     visibility: visible;
   }
   60% {
     scale: 1;
-    translate: -50% 90%;
+    translate: -50% 80%;
     visibility: visible;
   }
   80% {
     scale: 1;
-    translate: -50% 90%;
+    translate: -50% 80%;
     visibility: visible;
   }
   90% {
     scale: 1;
-    translate: -50% 80%;
+    translate: -50% 70%;
     visibility: visible;
   }
 
   100% {
     scale: 1;
-    translate: -50% 90%;
+    translate: -50% 80%;
     visibility: visible;
   }
 }
 .open-portfolio {
+  background-color: rgb(0, 251, 255);
   animation: moveElementSecond 2000ms ease-in-out normal both;
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: rgb(134, 244, 246);
+  }
 }
 @keyframes moveElementSecond {
   0% {
@@ -83,28 +88,34 @@ li {
   }
   60% {
     scale: 1;
-    translate: -50% 200%;
+    translate: -50% 190%;
     visibility: visible;
   }
   80% {
     scale: 1;
-    translate: -50% 200%;
+    translate: -50% 190%;
     visibility: visible;
   }
   90% {
     scale: 1;
-    translate: -50% 190%;
+    translate: -50% 180%;
     visibility: visible;
   }
 
   100% {
     scale: 1;
-    translate: -50% 200%;
+    translate: -50% 190%;
     visibility: visible;
   }
 }
 .open-contact {
+  background-color: rgb(0, 255, 221);
   animation: moveElementThird 2000ms ease-in-out normal both;
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: rgb(132, 247, 232);
+  }
 }
 @keyframes moveElementThird {
   0% {
@@ -120,18 +131,18 @@ li {
 
   80% {
     scale: 1;
-    translate: -50% 310%;
+    translate: -50% 300%;
     visibility: visible;
   }
   90% {
     scale: 1;
-    translate: -50% 300%;
+    translate: -50% 290%;
     visibility: visible;
   }
 
   100% {
     scale: 1;
-    translate: -50% 310%;
+    translate: -50% 300%;
     visibility: visible;
   }
 }
