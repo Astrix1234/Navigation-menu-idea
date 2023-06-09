@@ -1,13 +1,16 @@
 .button-open {
   position: absolute;
   left: 50%;
-  translate: -50% 350%;
+  translate: -50% 150%;
   background-color: transparent;
   border: none;
   scale: 3;
+  visibility: visible;
+  opacity: 1;
   display: block;
   cursor: pointer;
-  transition: visibility 400ms ease-in-out, scale 400ms ease-in-out;
+  transition: visibility 2000ms ease-in-out, scale 2000ms ease-in-out,
+    opacity 2000ms ease-in-out;
 }
 .button-clouse {
   @extend .button-open;
@@ -33,4 +36,5 @@
 .is-hidden {
   scale: 0;
   visibility: hidden;
+  opacity: 0;
 }
